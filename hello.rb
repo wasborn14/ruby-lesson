@@ -1,33 +1,53 @@
-# status = 'error'
-# if status != 'ok'
-#   puts '何か異常があります'
-# end
+# country = 'italy'
 #
-# status = 'error'
-# unless status == 'ok'
-#   puts '何か異常があります'
-# end
-
-# status = 'ok'
-# unless status == 'ok'
-#   puts '何か異常があります'
+# if country == 'japan'
+#   puts 'こんにちは'
+# elsif country == 'us'
+#   puts 'hello'
+# elsif country == 'italy'
+#   puts 'ciao'
 # else
-#   puts '正常です'
+#   puts '???'
 # end
 
-# status = 'error'
-
-# message =
-# unless status == 'ok'
-#   '何か異常があります'
-# else
-#   '正常です'
-# end
+# country = 'italy'
 #
-# puts message
-
-# puts '何か異常があります' unless status == 'ok'
-
-# unless status == 'ok' then
-#   puts '何か異常があります'
+# case country
+# when 'japan'
+#   puts 'こんにちは'
+# when 'us'
+#   puts 'hello'
+# when 'italy'
+#   puts 'ciao'
+# else
+#   puts '???'
 # end
+
+# country = 'アメリカ'
+#
+# case country
+# when 'japan', '日本'
+#   puts 'こんにちは'
+# when 'us', 'アメリカ'
+#   puts 'hello'
+# when 'italy', 'イタリア'
+#   puts 'ciao'
+# else
+#   puts '???'
+# end
+
+country = 'italy'
+
+message =
+case country
+when 'japan'
+  'こんにちは'
+when 'us'
+  'hello'
+when 'italy'
+  'ciao'
+else
+  '???'
+end
+
+puts message
